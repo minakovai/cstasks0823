@@ -5,12 +5,17 @@
 // 782 -> 72
 // 918 -> 98
 
+int DelSecondDigit (int num)
+{
+    int firstDigit = num / 100;
+    int thirdDigit = num % 10;
+    int result = firstDigit * 10 + thirdDigit;
+    return result;
+}
+
 int number = new Random().Next(100,1000);
 Console.WriteLine($"Случайное число = {number}");
 
-int firstDigit = number / 100;
-int thirdDigit = number % 10;
+int newNumber = DelSecondDigit(number);
 
-int result = firstDigit * 10 + thirdDigit;
-
-Console.WriteLine($"Случайное число без второй цирфы {result}");
+Console.WriteLine($"Случайное число без второй цирфы {newNumber}");
