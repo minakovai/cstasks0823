@@ -11,5 +11,8 @@ Console.WriteLine($"Случайное число в диапозоне 10 -99 -
 int firstDigit = number / 10; // 78/10=7
 int secondDigit = number % 10; // 78%10 = 70+8
 
-if (firstDigit > secondDigit) Console.WriteLine ($"Наибольшая цифра числа -> {firstDigit}");
-else Console.WriteLine($"Наибольшая цифра числа -> {secondDigit}");
+//if (firstDigit > secondDigit) Console.WriteLine ($"Наибольшая цифра числа -> {firstDigit}");
+//else Console.WriteLine($"Наибольшая цифра числа -> {secondDigit}");
+
+int result = firstDigit > secondDigit ? firstDigit : secondDigit;
+Console.WriteLine($"Наибольшая цифра числа -> {result}");
