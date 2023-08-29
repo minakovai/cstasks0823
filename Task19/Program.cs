@@ -1,5 +1,5 @@
 ﻿
-bool CheckFiveDigits (int num1)
+bool CheckFiveDigits(int num1)
 {
     if ((num1 > 9999) & (num1 < 100000)) return true;
     else return false;
