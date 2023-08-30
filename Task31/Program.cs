@@ -47,7 +47,7 @@ int [] sumPositiveNegativeElem = SumPositiveNegativeElem(array);
 Console.WriteLine($"Сумма положительных элементов = {sumPositiveNegativeElem[0]}");
 Console.WriteLine($"Сумма отрицательных элементов = {sumPositiveNegativeElem[1]}");
 
-int sumPositiveElem = SumPositiveElem (array)
+int sumPositiveElem = SumPositiveElem (array);
 
 
 
