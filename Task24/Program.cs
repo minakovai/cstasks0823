@@ -10,7 +10,11 @@ int SumNumbers(int num)
     int sum = 0;
     for (int i = 1; i <= num; i++)
     {
-        sum += i;
+        checked
+        {
+            sum += i;
+        }
+        
     }
     return sum;
 }
