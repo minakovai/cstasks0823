@@ -20,7 +20,7 @@ void PrintArray(int[] mass)
     while (i < mass.Length)
     {
         Console.Write($"{mass[i]} ");
-        i++;
+        i++; 
     }
 }
 
