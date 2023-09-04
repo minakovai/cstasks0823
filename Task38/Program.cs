@@ -9,7 +9,7 @@ double[] CreateArrayRndDouble(int size)
 
     for (int i = 0; i < arr.Length; i++)
     {
-        arr[i] = rnd.Next();
+        arr[i] = rnd.NextDouble();
     }
     return arr;
 }
@@ -19,8 +19,8 @@ void PrintArray(double[] arr)
     Console.Write("[");
     for (int i = 0; i < arr.Length; i++)
     {
-        if (i < arr.Length - 1) Console.Write($"{arr[i]}, ");
-        else Console.Write($"{arr[i]}");
+        if (i < arr.Length - 1) Console.Write($"{arr[i]:F2}, ");
+        else Console.Write($"{arr[i]:F2}");
     }
     Console.Write("]");
 }
@@ -57,4 +57,4 @@ Console.WriteLine();
 double min = MinArrayNum(array);
 double max = MaxArrayNum(array);
 double res = max - min;
-Console.WriteLine($"{max} - {min} = {res}");
+Console.WriteLine($"{max:F2} - {min:F2} = {res:F2}");
