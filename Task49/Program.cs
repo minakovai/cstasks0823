@@ -43,7 +43,7 @@ void EvenIndicesInPow (int[,] matrix)
     }
 }
 
-int[,] array2d = CreateMatrixRndInt(3,4,-100,100);
+int[,] array2d = CreateMatrixRndInt(3,4,-10,10);
 PrintMatrix(array2d);
 EvenIndicesInPow(array2d);
 Console.WriteLine();
