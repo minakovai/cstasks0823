@@ -26,4 +26,4 @@ int numberOne = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите 2-е число: ");
 int numberTwo = Convert.ToInt32(Console.ReadLine());
 int result = AckermanFunction(numberOne, numberTwo);
-Console.WriteLine($"Число Аккермана: {result}");
+Console.WriteLine($"Функция Аккермана равна: {result}");
